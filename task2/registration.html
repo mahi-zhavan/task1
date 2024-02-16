@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Course Registration</title>
+</head>
+<body>
+    <div class="Topback">
+        <div id="header">
+            <h1>Welcome to our Online Course Platform</h1>
+        </div>
+     
+        <div class="topnav">
+            <ul>
+               <li><a href="index.html"target="_blank"> Home </a></li>
+                <li><a href="about.html"target="_blank"> About Us </a></li>
+                <li><a href="registration.html"target="_blank"> Registration </a></li>
+                <li><a href="contact.html"target="_blank"> Contact </a></li>
+            </ul>     
+        </div>
+    </div>
+
+    <div class="regform">
+        <h2>Register for an Online Course</h2>
+        <br />
+        <p>Fill out the form below to register for our online courses.</p>
+        <br />
+        <form action="registration_handler.php" method="post">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <br />
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br />
+             <div class="select">
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="web-development">Machine learning</option>
+                    <option value="data-science">VLSI Design</option>
+                    <option value="programming">Nano Technology</option>
+                </select>
+             </div>
+
+             <br />
+             
+             <div class="select">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+             </div>
+             <br />
+             <div class="Radio">
+                <input type="radio" name = "gender" id="male">
+                <label for="male" > male</label>
+                <input type="radio" name = "gender" id="Female">
+                <label for="Female" >Female</label>
+             </div>
+             <br />
+             <div class="btn">
+                <button type="submit" value="Register"> Register</button>
+             </div>
+           
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Online Course Website</p>
+    </footer>
+</body>
+</html>
